@@ -14,7 +14,7 @@ Question.prototype.questionEl = function() {
       <h3>${this.query}</h3>
       <p>Asked by: ${this.author}</p>
       <ul id="answers-${this.id}"></ul>
-      <form id="add-answer" class="add-answer" data-id=${this.id} action="#" method="post">
+      <form class="add-answer" data-id=${this.id} action="#" method="post">
         <label for="answer-content"></label>
         <input type="text" id="answer-content-${this.id}" name="answer-content" placeholder="answer">
         <input type="submit" value="Submit Answer">
