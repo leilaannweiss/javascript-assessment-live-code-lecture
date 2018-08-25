@@ -26,10 +26,9 @@ Build out the following methods on the `Answer` class (Use ES6 syntax)
 + `Answer.prototype.answerEl()`
   + returns a string of html
   + html has an `li` tag that shows the answer content, vote count, and renders a form to increment votes
-+ `Answer.prototype.getQuestion(imageId)`
++ `Answer.prototype.findQuestion(questionId)`
   + given a question id, returns the question object with that id
   + before returning the question obj, add the answer to the question's `answers` property
-
 
 Build out the following methods on the `AnswersController` class (Use ES6 syntax)
 
@@ -39,7 +38,7 @@ Build out the following methods on the `AnswersController` class (Use ES6 syntax
   + execute the render function on that found question to append the new answer
 + `AnswersController.prototype.render(answer, questionId)`
   + selects the appropriate question element for the answer
-  + adds the new answer element as a `li` into to a `ul`
+  + adds the new answer element into to a `ul`
   + assigns upvoteFormListener for voting
 + `AnswersController.prototype.upvoteFormListener()`
   + selects correct answer form and adds an eventlistener to trigger a function on form submit
