@@ -21,12 +21,12 @@ Build out the following methods on the `Answer` class (Use ES6 syntax)
   + should return all of the answer objects in an array
   + a property of the Answer class
 + `new Answer(content, questionId)`
-  + should initialize with an id, question object (getQuestion) and content (the actual text of the answer)
+  + should initialize with an id, question object (findQuestion) and content (the actual text of the answer)
   + should save new answer to Answer.all property
 + `Answer.prototype.answerEl()`
   + returns a string of html
   + html has an `li` tag that shows the answer content, vote count, and renders a form to increment votes
-+ `Answer.prototype.getQuestion(questionId)`
++ `Answer.prototype.findQuestion(questionId)`
   + given a question id, returns the question object with that id
   + before returning the question obj, add the answer to the question's `answers` property
 
